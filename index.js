@@ -9,11 +9,11 @@ app.get('/', (req, res) => {
 })
 
 app.post('/signin', (req, res) => {
-    res.send('Вход выполнен!')
+    res.send('Вход вроде бы выполнен!')
 })
 
 app.post('/signup', (req, res) => {
-  res.send('Регистрация завершена!')
+  res.send('Регистрация, наверное, завершена!')
 })
 
 app.listen(port, () => {
