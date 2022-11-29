@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF+3">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Что? А то!</title>
+    <link href="../style/style.css" rel="stylesheet">
+    <title>Login</title>
 </head>
-<body style="color:RoyalBlue; background-color: Snow">
-    <h1>Ентер</h1>
 
-    <a href="example.html">Регистер</a>
+<body>
+    <div class="container">
+        <div class="center-card">
 
-    <form method="post" action="/Login">
-        <p>
-            <label for="Login">Логин</label>
-            <input id="Login" name="Login" type="text" placeholder="Энтер ё логин" required>
-        </p>
-        <p>
-            <label for="password">Пароль</label>
-            <input id="password" name="password" placeholder="Энтер ё пассворд" required>
-        </p>
-        <p>
-            <label for="remMe">Ё нейм</label>
-            <input id="remMe" name="remMe" placeholder="Энтер ё нейм">
-        </p>
+            <h1>Вход 🔐</h1>
 
-        <input style="width: 60px; height: 20px; border: radius: 28px;" type="submit" value="Самбит">
-    </form>
+            <form class="card-body" method="post" action="/login">
+
+                <div class="field">
+                    <label for="login">Логин 👤</label> 
+                    <input id="login" name="login" type="text" required>
+                </div>
+
+                <div class="field">
+                    <label for="password">Пароль 🔑</label>
+                    <input id="password" name="password" type="password" required>
+                </div>
+
+                <div class="field">
+                    <input id="remMe" name="remMe" type="checkbox">
+                    <label for="remMe">Запомнить меня</label>
+                </div>
+
+                <a href="/index.html">Зарегистрироваться</a>
+
+                <input class="btn-submit" type="submit" value="Войти">
+            </form>
+        </div>
+    </div>
 </body>
-</html> 
+
+</html>
