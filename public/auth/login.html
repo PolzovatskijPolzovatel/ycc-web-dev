@@ -18,26 +18,34 @@
             <form class="card-body" method="post" action="/login">
 
                 <div class="field">
-                    <label for="login">Логин 👤</label> 
                     <input id="login" name="login" type="text" required>
+                    <span></span>
+                    <label for="login">Логин 👤</label>
                 </div>
 
                 <div class="field">
-                    <label for="password">Пароль 🔑</label>
                     <input id="password" name="password" type="password" required>
+                    <label for="password">Пароль 🔑</label>
                 </div>
-
-                <div class="field">
-                    <input id="remMe" name="remMe" type="checkbox">
-                    <label for="remMe">Запомнить меня</label>
-                </div>
-
-                <a href="/index.html">Зарегистрироваться</a>
 
                 <input class="btn-submit" type="submit" value="Войти">
+                <div class="link">
+                    Нет аккаунта? <a href="/index.html">Зарегистрироваться</a>
+                </div>    
             </form>
         </div>
     </div>
 </body>
+<script>
+    let answer;
+    answer = confirm('አሁን አንተ ትልቅ ሰው ነህ?')
+    
+
+    alert(`Твой ответ: ${answer}`)
+
+    console.log('Не ври!')
+</script>
+
+
 
 </html>

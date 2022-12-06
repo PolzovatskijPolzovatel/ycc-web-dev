@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: linear-gradient(120deg, #4c115b, #077de1, #49fce0); 
+    background: linear-gradient(120deg, #4c115b, #077de1, #49fce0);
     overflow: hidden;
 }
 
@@ -57,7 +57,7 @@
     color: #adadad;
     transform: translateY(-50%);
     pointer-events: none;
-    transition: 2s;
+    transition: .5s;
 }
 
 .field span::before {
@@ -93,4 +93,21 @@
 .btn-submit:hover {
     background: #2691d900;
     transition: 0.5 s;
+}
+
+.link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    colour: #666666;
+}
+
+.link a {
+    color: #2691d9;
+    text-decoration: none;
+}
+
+.link a:hover {
+    color: #4979fc;
+    text-decoration: underline;
 }
